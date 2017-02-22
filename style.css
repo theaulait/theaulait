@@ -1,0 +1,131 @@
+body{
+  font-family: "didot";
+}
+
+#logo{
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#name{
+  font-size: 2em;
+  display: block;
+}
+
+nav{
+  font-size: 1em;
+  height: 40px;
+  width: 100%;
+  background: #fff;
+  font-weight: bold;
+  position: relative;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+nav li {
+  width: 100%;
+  display: inline;
+  float: left;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+nav a {
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+nav a:hover, nav a:active{
+  background: #f3f3f3;
+}
+
+nav a#menu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+      height: auto;
+    }
+    nav ul {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    nav li {
+      width: 50%;
+      float: left;
+      position: relative;
+    }
+
+    nav li a {
+    border: 1px solid #9E9E9E;
+    }
+
+    nav a {
+      text-align: left;
+      width: 100%;
+      text-indent: 25px;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+  nav {
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav a#menu {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+  }
+  nav a#menu:after {
+    content:"";
+    background: url("images/line-nav.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  nav li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  nav li a {
+    border-bottom: 1px solid #9E9E9E;
+  }
+}

@@ -245,10 +245,4 @@ nav a#menu {
   nav li a {
     border-bottom: 1px solid #9E9E9E;
   }
-  #self {
-      width: 150px;
-      height: 150px;
-      border-radius: 75px;
-      text-align: center;
-  }
 }

@@ -1,6 +1,6 @@
 body{
   width: 100%;
-  font-family:'Didot', sans-serif;
+  font-family: 'helvetica';
 }
 
 h2{
@@ -131,7 +131,6 @@ nav{
   height: 40px;
   width: 100%;
   background: #fff;
-  font-weight: bold;
   position: relative;
 }
 
